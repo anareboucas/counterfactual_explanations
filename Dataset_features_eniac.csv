@@ -1,0 +1,120 @@
+Variable Original;Variable Translated;Description;Subcategory;Type;Mutability;Data Source
+MEDIA_ESCOLA;School mean score;School mean Enem score;Target;Continuous;Target;ENEM 2024
+TIER;Performance tier;Performance tier (quartile-based: Q1-Q4);Target;Categorical;Target;Derived
+TP_DEPENDENCIA;Administrative dependency type;Type of administrative dependency (federal, state, municipal, private);Administrative context;Categorical;Immutable;School Census 2024
+TP_LOCALIZACAO;Location type;Urban or rural school location;Geographic context;Categorical;Immutable;School Census 2024
+TP_LOCALIZACAO_DIFERENCIADA;Differentiated location type;Differentiated school location (indigenous territory, quilombola, rural, etc.);Geographic context;Categorical;Immutable;School Census 2024
+CO_REGIAO;Geographic region code;Code of the geographic macro-region (N, NE, SE, S, CO);Geographic context;Categorical;Immutable;School Census 2024
+CO_UF;State code;Code of the Brazilian state (federative unit);Geographic context;Categorical;Immutable;School Census 2024
+IN_EDUCACAO_INDIGENA;Indigenous school;School offers indigenous education;Geographic context;Binary (0/1);Immutable;School Census 2024
+QT_MAT_MED;High school enrollments;Number of high school enrollments;School size;Numeric (count);Immutable;School Census 2024
+PIB_PER_CAPITA;Municipal GDP per capita;Municipal GDP per capita;Socioeconomic context;Continuous;Immutable;IBGE 2021
+POPULACAO_LOG;Municipal population (log);Municipal population (log-transformed);Socioeconomic context;Continuous;Immutable;IBGE Census 2021
+GINI_UF;State Gini index;State-level Gini inequality index;Socioeconomic context;Continuous;Immutable;PNAD 2024 / IBGE
+IN_LOCAL_FUNC_PREDIO_ESCOLAR;Operates in school building;School operates in a dedicated school building;Building;Binary (0/1);Structural;School Census 2024
+IN_PREDIO_COMPARTILHADO;Shared building;Building is shared with another school;Building;Binary (0/1);Structural;School Census 2024
+IN_BIBLIOTECA;Library;Physical facility: library;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_LEITURA;Reading room;Physical facility: reading room;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_LABORATORIO_CIENCIAS;Science laboratory;Physical facility: science laboratory;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_LABORATORIO_INFORMATICA;Computer laboratory;Physical facility: computer laboratory;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_LABORATORIO_EDUC_PROF;Vocational education laboratory;Physical facility: laboratory for vocational education;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_QUADRA_ESPORTES;Sports court;Physical facility: covered or uncovered sports court;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_AUDITORIO;Auditorium;Physical facility: auditorium;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_REFEITORIO;Cafeteria;Physical facility: cafeteria;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_PROFESSOR;Teachers' room;Physical facility: teachers' room;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_DIRETORIA;Principal's office;Physical facility: principal's office;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_ATENDIMENTO_ESPECIAL;Special education resource room;Physical facility: multifunctional resource room for specialized educational support (AEE);Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_MULTIUSO;Multipurpose room;Physical facility: multipurpose room (music, dance, arts);Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_ATELIE_ARTES;Art studio;Physical facility: art studio/workshop;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SALA_MUSICA_CORAL;Music/choir room;Physical facility: music or choir room;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_PATIO_COBERTO;Covered courtyard;Physical facility: covered courtyard;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_PATIO_DESCOBERTO;Open courtyard;Physical facility: open courtyard;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_SECRETARIA;Secretary's office;Physical facility: school secretary's office;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_AREA_VERDE;Green area;Physical facility: vegetation or lawn area;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_AREA_PLANTIO;Garden/planting area;Physical facility: garden, planting or agricultural production area;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+IN_DORMITORIO_PROFESSOR;Teacher dormitory;Physical facility: teacher dormitory;Pedagogical spaces;Binary (0/1);Structural;School Census 2024
+QT_SALAS_UTILIZADAS;Total classrooms in use;Total number of classrooms in use (inside and outside building);Classrooms;Numeric (count);Structural;School Census 2024
+QT_SALAS_UTILIZA_CLIMATIZADAS;Air-conditioned classrooms;Number of air-conditioned classrooms in use;Classrooms;Numeric (count);Structural;School Census 2024
+QT_SALAS_UTILIZADAS_DENTRO;Classrooms inside building;Number of classrooms in use inside the building;Classrooms;Numeric (count);Structural;School Census 2024
+QT_SALAS_UTILIZADAS_FORA;Classrooms outside building;Number of classrooms in use outside the building;Classrooms;Numeric (count);Structural;School Census 2024
+QT_SALAS_UTILIZADAS_ACESSIVEIS;Accessible classrooms;Number of accessible classrooms for persons with disabilities or reduced mobility;Classrooms;Numeric (count);Structural;School Census 2024
+IN_ACESSIBILIDADE_RAMPAS;Accessibility ramps;Accessibility feature: ramps in internal circulation areas;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_ACESSIBILIDADE_CORRIMAO;Handrails;Accessibility feature: handrails and guardrails in internal circulation areas;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_ACESSIBILIDADE_PISOS_TATEIS;Tactile flooring;Accessibility feature: tactile flooring in internal circulation areas;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_ACESSIBILIDADE_VAO_LIVRE;Wide doorways;Accessibility feature: doorways with at least 80 cm clearance;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_BANHEIRO_PNE;Accessible restroom;Accessible restroom for persons with disabilities or reduced mobility;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_BANHEIRO_CHUVEIRO;Restroom with shower;Restroom or changing room with shower;Structural accessibility;Binary (0/1);Structural;School Census 2024
+IN_DIURNO;Daytime classes;Most class activities occur between 6am and 5:59pm;Timetable & provision;Binary (0/1);Structural;School Census 2024
+IN_NOTURNO;Evening classes;Most class activities occur between 6pm and 5:59am;Timetable & provision;Binary (0/1);Structural;School Census 2024
+QT_TUR_MED;Number of HS classes;Number of high school classes;Timetable & provision;Numeric (count);Structural;School Census 2024
+QT_MAT_MED_INT;Full-time HS enrollments;Number of full-time high school enrollments;Timetable & provision;Numeric (count);Structural;School Census 2024
+HAD_MED;Mean daily instruction hours (HS);Mean daily instruction hours (high school);Timetable & provision;Continuous;Structural;INEP Indicators 2024
+TP_PROPOSTA_PEDAGOGICA;Pedagogical proposal update status;Whether the school's pedagogical proposal was updated in the last 12 months;Pedagogical proposal;Categorical;Structural;School Census 2024
+TP_AEE;Specialized educational support type;Type of specialized educational support offered (AEE);Pedagogical proposal;Categorical;Structural;School Census 2024
+TP_ATIVIDADE_COMPLEMENTAR;Complementary activity type;Type of complementary educational activities offered;Pedagogical proposal;Categorical;Structural;School Census 2024
+AFD_MED_CAT_1;% fully qualified HS teachers;% HS teachers with fully adequate training;Teacher quality;Continuous;Structural;INEP Indicators 2024
+AFD_MED_CAT_5;% HS teachers without undergrad degree;% HS teachers without undergraduate degree;Teacher quality;Continuous;Structural;INEP Indicators 2024
+QT_TRANSP_RESP_EST;State-funded student transport;Number of enrollments using state-funded school transport;Transport;Numeric (count);Structural;School Census 2024
+TDI_MED;Grade-age distortion rate (HS);Grade-age distortion rate (high school);Educational indicators;Continuous;Indirectly Actionable;INEP Indicators 2024
+IRD_MED;Teacher regularity index (HS);Teacher body regularity index (high school);Educational indicators;Continuous;Indirectly Actionable;INEP Indicators 2024
+IN_ORGAO_ASS_PAIS_MESTRES;Parent-teacher association;Parent-teacher association (APM) is active at the school;Community participation;Binary (0/1);Indirectly Actionable;School Census 2024
+IN_ORGAO_ASS_PAIS;Parents' association;Parents' association is active at the school;Community participation;Binary (0/1);Indirectly Actionable;School Census 2024
+IN_INTERNET;Internet access;School has internet access;Connectivity;Binary (0/1);Operational;School Census 2024
+IN_INTERNET_ALUNOS;Student internet access;Internet access available for student use;Connectivity;Binary (0/1);Operational;School Census 2024
+IN_INTERNET_APRENDIZAGEM;Learning internet access;Internet access used in teaching and learning processes;Connectivity;Binary (0/1);Operational;School Census 2024
+IN_INTERNET_ADMINISTRATIVO;Administrative internet access;Internet access for administrative use;Connectivity;Binary (0/1);Operational;School Census 2024
+IN_INTERNET_COMUNIDADE;Community internet access;Internet access available for community use;Connectivity;Binary (0/1);Operational;School Census 2024
+IN_BANDA_LARGA;Broadband internet;School has broadband internet connection;Connectivity;Binary (0/1);Operational;School Census 2024
+QT_DESKTOP_ALUNO;Desktop computers (students);Number of desktop computers for student use;Student equipment;Numeric (count);Operational;School Census 2024
+QT_COMP_PORTATIL_ALUNO;Laptops (students);Number of laptops for student use;Student equipment;Numeric (count);Operational;School Census 2024
+QT_TABLET_ALUNO;Tablets (students);Number of tablets for student use;Student equipment;Numeric (count);Operational;School Census 2024
+IN_DESKTOP_ALUNO;Has desktops (students);School has desktop computers for student use;Student equipment;Binary (0/1);Operational;School Census 2024
+IN_COMP_PORTATIL_ALUNO;Has laptops (students);School has laptops for student use;Student equipment;Binary (0/1);Operational;School Census 2024
+IN_TABLET_ALUNO;Has tablets (students);School has tablets for student use;Student equipment;Binary (0/1);Operational;School Census 2024
+IN_EQUIP_MULTIMIDIA;Has multimedia projector;School has a multimedia projector (data show) for teaching;Pedagogical equipment;Binary (0/1);Operational;School Census 2024
+QT_EQUIP_MULTIMIDIA;Multimedia projectors;Number of multimedia projectors (data show);Pedagogical equipment;Numeric (count);Operational;School Census 2024
+IN_EQUIP_LOUSA_DIGITAL;Has digital whiteboard;School has a digital interactive whiteboard for teaching;Pedagogical equipment;Binary (0/1);Operational;School Census 2024
+QT_EQUIP_LOUSA_DIGITAL;Digital whiteboards;Number of digital interactive whiteboards;Pedagogical equipment;Numeric (count);Operational;School Census 2024
+IN_EQUIP_TV;Has television;School has a television for teaching purposes;Pedagogical equipment;Binary (0/1);Operational;School Census 2024
+IN_EQUIP_SOM;Has sound system;School has a sound system for teaching purposes;Pedagogical equipment;Binary (0/1);Operational;School Census 2024
+QT_EQUIP_SOM;Sound systems;Number of sound systems;Pedagogical equipment;Numeric (count);Operational;School Census 2024
+IN_EQUIP_SCANNER;Has scanner;School has a scanner for administrative use;Administrative equipment;Binary (0/1);Operational;School Census 2024
+IN_EQUIP_IMPRESSORA;Has printer;School has a printer for administrative use;Administrative equipment;Binary (0/1);Operational;School Census 2024
+IN_EQUIP_IMPRESSORA_MULT;Has multifunction printer;School has a multifunction printer for administrative use;Administrative equipment;Binary (0/1);Operational;School Census 2024
+IN_EQUIP_COPIADORA;Has copier;School has a copier for administrative use;Administrative equipment;Binary (0/1);Operational;School Census 2024
+IN_COMPUTADOR;Has administrative computer;School has a computer for administrative use;Administrative equipment;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_MULTIMIDIA;Multimedia teaching materials;School uses multimedia materials for teaching and learning activities;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_CIENTIFICO;Scientific teaching materials;School uses scientific materials and kits for teaching;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_DESPORTIVA;Sports and recreation materials;School has materials for sports practice and recreation;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_DIFUSAO;Audio amplification materials;School has audio amplification and diffusion equipment for teaching;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_JOGOS;Educational games;School uses educational games in teaching activities;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_ARTISTICAS;Arts and cultural materials;School has materials for cultural and artistic activities;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_PROFISSIONAL;Vocational education materials;School has materials for vocational education;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_MUSICAL;Musical instruments;School has musical instruments for ensemble, band and/or music classes;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_ETNICO;Ethnic-racial education materials;School has pedagogical materials for ethnic-racial relations education;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+IN_MATERIAL_PED_NENHUM;No pedagogical materials;School has none of the listed socio-cultural or pedagogical materials;Pedagogical materials;Binary (0/1);Operational;School Census 2024
+QT_PROF_COORDENADOR;Class coordinators (count);Number of class or subject coordinators on staff;Support staff;Numeric (count);Operational;School Census 2024
+IN_PROF_COORDENADOR;Has class coordinator;School has at least one class or subject coordinator;Support staff;Binary (0/1);Operational;School Census 2024
+IN_PROF_PSICOLOGO;Has school psychologist;School has a school psychologist on staff;Support staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_PSICOLOGO;School psychologists (count);Number of school psychologists on staff;Support staff;Numeric (count);Operational;School Census 2024
+IN_PROF_PEDAGOGIA;Has pedagogical support staff;School has pedagogical support professionals (pedagogues, coordinators, advisors);Support staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_PEDAGOGIA;Pedagogical support staff (count);Number of pedagogical support professionals on staff;Support staff;Numeric (count);Operational;School Census 2024
+IN_PROF_BIBLIOTECARIO;Has librarian;School has a librarian or library assistant on staff;Support staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_BIBLIOTECARIO;Librarians (count);Number of librarians or library assistants on staff;Support staff;Numeric (count);Operational;School Census 2024
+QT_PROF_ASSIST_SOCIAL;Social workers (count);Number of social workers or community advisors on staff;Support staff;Numeric (count);Operational;School Census 2024
+IN_PROF_ASSIST_SOCIAL;Has social worker;School has a community advisor or social worker on staff;Support staff;Binary (0/1);Operational;School Census 2024
+IN_PROF_MONITORES;Has lab/tech monitors;School has laboratory or educational technology monitors/assistants;Support staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_MONITORES;Lab/tech monitors (count);Number of laboratory or technology monitors and assistants on staff;Support staff;Numeric (count);Operational;School Census 2024
+IN_PROF_GESTAO;Has management staff;School has vice-principal or administrative/financial management staff;Management staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_GESTAO;Management staff (count);Number of vice-principals and administrative management staff;Management staff;Numeric (count);Operational;School Census 2024
+IN_PROF_SECRETARIO;Has school secretary;School has a school secretary on staff;Management staff;Binary (0/1);Operational;School Census 2024
+QT_PROF_SECRETARIO;School secretaries (count);Number of school secretaries on staff;Management staff;Numeric (count);Operational;School Census 2024
+IN_ORGAO_CONSELHO_ESCOLAR;School council;School council (Conselho Escolar) is active at the school;Governance & participation;Binary (0/1);Operational;School Census 2024
+IN_ORGAO_GREMIO_ESTUDANTIL;Student union;Student union (Gremio Estudantil) is active at the school;Governance & participation;Binary (0/1);Operational;School Census 2024
+IN_ESPACO_ATIVIDADE;Shared community spaces;School shares spaces for school-community integration activities;Services;Binary (0/1);Operational;School Census 2024
+IN_EDUC_AMBIENTAL;Environmental education program;School develops environmental education activities;Services;Binary (0/1);Operational;School Census 2024
+QT_DOC_MED;HS teachers (count);Number of high school teachers on staff;Teaching staff;Numeric (count);Operational;School Census 2024
+IN_ACESSIBILIDADE_SINAL_VISUAL;Visual accessibility signals;Accessibility feature: visual signaling on floors/walls in internal circulation areas;Operational accessibility;Binary (0/1);Operational;School Census 2024
+IN_ACESSIBILIDADE_SINAL_SONORO;Auditory accessibility signals;Accessibility feature: auditory signaling in internal circulation areas;Operational accessibility;Binary (0/1);Operational;School Census 2024
+IN_ACESSIBILIDADE_SINAL_TATIL;Tactile accessibility signals;Accessibility feature: tactile signaling on floors/walls;Operational accessibility;Binary (0/1);Operational;School Census 2024
+IN_ACESSIBILIDADE_INEXISTENTE;No accessibility features;School has none of the listed accessibility features for persons with disabilities;Operational accessibility;Binary (0/1);Operational;School Census 2024
